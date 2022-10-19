@@ -123,7 +123,7 @@ public void OnMapStart()
 	NotBots = lastPlayerC;
 
 	GetCurrentMap(MapName, 100);
-	FormatTime(FormatedTime, 100, "%d_%b_%Y", CurrentTime);    // name the file 'day month year'
+	FormatTime(FormatedTime, 100, "%d_%b_%Y", CurrentTime);    
 }
 
 public void OnRebuildAdminCache(AdminCachePart part)
@@ -269,7 +269,7 @@ public Action Command_ManggilAdmin(int client, const char args)
 		Format(szID, 64, "Unknown SteamID64");
 	}
 	Format(szDscName, sizeof(szDscName), "%s %s || %s", szPre, szSteamID, Name);
-	Format(szDscMsg, sizeof(szDscMsg), "<@&%s>```diff\n+Sender: %s \n+Pesan: %s \nIP: %s \n+Negara: %s \n+Server: %s ```\n[Steam Profile](https://steamcommunity.com/profiles/%s)", szRole, Name, Msg, IPAddress, Country, inserver, szID);
+	Format(szDscMsg, sizeof(szDscMsg), "<@&%s>```diff\n+Sender: %s \n+Message: %s \nIP: %s \n+Country: %s \n+Server: %s ```\n[Steam Profile](https://steamcommunity.com/profiles/%s)", szRole, Name, Msg, IPAddress, Country, inserver, szID);
 	hook.SetUsername(szDscName);
 	hook.SetAvatar(playersdata[client].avatarurl);
 	hook.SetContent(szDscMsg);
