@@ -1,6 +1,11 @@
 # conn-logs
 Connection logs for CSGO Server
 
+## Install Guide
+- Copy `include`,`discord`,`dcLogger.sp` To `csgo/addons/sourcemod/scripting/`
+- Copy `dcLogger.smx` To `csgo/addons/sourcemod/plugins/`
+
+## Screen shoot
 PUBLIC CONNECTION LOG EXAMPLE:
 <div align="center">
 	<img src="example.jpg" >
