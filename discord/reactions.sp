@@ -1,3 +1,4 @@
+// function add reaction
 public int Native_DiscordBot_AddReaction(Handle plugin, int numParams) {
 	DiscordBot bot = GetNativeCell(1);
 	
@@ -13,6 +14,7 @@ public int Native_DiscordBot_AddReaction(Handle plugin, int numParams) {
 	AddReaction(bot, channel, msgid, emoji);
 }
 
+// function delete reaction
 public int Native_DiscordBot_DeleteReaction(Handle plugin, int numParams) {
 	DiscordBot bot = GetNativeCell(1);
 	
@@ -31,6 +33,7 @@ public int Native_DiscordBot_DeleteReaction(Handle plugin, int numParams) {
 	DeleteReaction(bot, channel, msgid, emoji, user);
 }
 
+// function get reaction
 public int Native_DiscordBot_GetReaction(Handle plugin, int numParams) {
 	DiscordBot bot = GetNativeCell(1);
 	
